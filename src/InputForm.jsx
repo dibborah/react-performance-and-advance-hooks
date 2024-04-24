@@ -1,4 +1,8 @@
-const InputForm = ({ username, setUsername }) => {
+import { useState } from "react";
+
+const InputForm = () => {
+  const [username, setUsername] = useState("");
+  console.log("InputForm Rendered");
   return (
     <form>
       <input
@@ -9,6 +13,16 @@ const InputForm = ({ username, setUsername }) => {
         onChange={(e) => setUsername(e.target.value)}
         autoComplete="off"
       />
+      <div>
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            setUsername(e.target.value);
+          }}
+        >
+          Clear
+        </button>
+      </div>
     </form>
   );
 };

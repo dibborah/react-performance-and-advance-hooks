@@ -1,4 +1,5 @@
 const ExtraComponent = () => {
+  console.log("ExtraComponent Rendered")
   return (
     <div className="card" style={{ backgroundColor: "#e8e6e6" }}>
       <h3>ExtraComponent</h3>
