@@ -1,10 +1,14 @@
-import BasicApp from "./BasicApp";
-import "./App.css"
+import Demo from "./Demo";
+import Extra from "./Extra";
+import "./App.css";
 
 const App = () => {
   return (
     <div>
-      <BasicApp />
+      <h1>React Memo Demo</h1>
+      <Demo>
+        <Extra />
+      </Demo>
     </div>
   );
 };
