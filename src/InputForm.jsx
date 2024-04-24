@@ -1,10 +1,13 @@
 import { useState } from "react";
 
-const InputForm = () => {
+const InputForm = ({ children }) => {
   const [username, setUsername] = useState("");
   console.log("InputForm Rendered");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <input
         type="text"
         name="username"
@@ -13,10 +16,14 @@ const InputForm = () => {
         onChange={(e) => setUsername(e.target.value)}
         autoComplete="off"
       />
+
+    {
+      //### Children props never re-renders even if its home component or parent component is rendered where it is in!!!
+    }
+      {children}
       <div>
         <button
           onClick={(e) => {
-            e.preventDefault();
             setUsername(e.target.value);
           }}
         >
