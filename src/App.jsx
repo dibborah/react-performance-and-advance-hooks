@@ -1,7 +1,12 @@
+import BasicApp from "./BasicApp";
+import "./App.css"
+
 const App = () => {
-  return <div>
-  <h1>App</h1>
-  </div>;
+  return (
+    <div>
+      <BasicApp />
+    </div>
+  );
 };
 
 export default App;
