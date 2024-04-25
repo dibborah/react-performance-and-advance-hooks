@@ -1,14 +1,10 @@
-import Demo from "./Demo";
-import Extra from "./Extra";
+import ExampleUseMemo from "./ExampleUseMemo1";
 import "./App.css";
 
 const App = () => {
   return (
     <div>
-      <h1>React Memo Demo</h1>
-      <Demo>
-        <Extra />
-      </Demo>
+      <ExampleUseMemo />
     </div>
   );
 };
