@@ -1,10 +1,10 @@
-import ExampleUseMemo from "./ExampleUseMemo1";
+import ExampleUseMemo2 from "../ExampleUseMemo2";
 import "./App.css";
 
 const App = () => {
   return (
     <div>
-      <ExampleUseMemo />
+      <ExampleUseMemo2 />
     </div>
   );
 };
